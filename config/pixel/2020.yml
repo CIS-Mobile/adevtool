@@ -2,4 +2,5 @@ type: device-list
 
 devices:
   - redfin.yml
+  - barbet.yml
   - bramble.yml
