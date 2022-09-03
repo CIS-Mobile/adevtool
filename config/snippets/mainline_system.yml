@@ -5,3 +5,4 @@ filters:
   files:
     prefix:
       - system/
+      - system_ext/apex/
