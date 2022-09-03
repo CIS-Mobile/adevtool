@@ -12,6 +12,7 @@ filters:
 
     prefix:
       - system/apex/
+      - system_ext/apex/
       - system/app/CaptivePortalLoginGoogle/
       - system/priv-app/DocumentsUIGoogle/
       - system/priv-app/NetworkPermissionConfigGoogle/
