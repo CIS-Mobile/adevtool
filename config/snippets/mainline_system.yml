@@ -5,14 +5,14 @@ filters:
   files:
     match:
       - system/apex/com.google.mainline.primary.libs.apex
-      - system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk
       - system/app/GoogleExtShared/GoogleExtShared.apk
       - system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk
-      - system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk
       - system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk
-      - system/priv-app/NetworkPermissionConfigGoogle/NetworkPermissionConfigGoogle.apk
-      - system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
       - system/priv-app/TagGoogle/TagGoogle.apk
 
     prefix:
       - system/apex/
+      - system/app/CaptivePortalLoginGoogle/
+      - system/priv-app/DocumentsUIGoogle/
+      - system/priv-app/NetworkPermissionConfigGoogle/
+      - system/priv-app/NetworkStackGoogle/

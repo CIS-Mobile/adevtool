@@ -34,6 +34,7 @@ filters:
       - product/app/PlayAutoInstallConfig/PlayAutoInstallConfig.apk
       - product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk
       - product/app/PrebuiltGmail/PrebuiltGmail.apk
+      - product/app/SpeechServicesByGoogle/SpeechServicesByGoogle.apk
       - product/app/talkback/talkback.apk
       - product/app/TrichromeLibrary-Stub/TrichromeLibrary-Stub.apk
       - product/app/TrichromeLibrary/TrichromeLibrary.apk.gz
