@@ -1,0 +1,21 @@
+device:
+  name: zx10
+  vendor: getac
+
+platform:
+  product_makefile: device/getac/zx10/aosp_zx10.mk
+
+  sepolicy_dirs:
+    - device/getac/zx10-sepolicy
+
+includes:
+  - ../snippets/mainline_system.yml
+  - ../snippets/gms.yml
+
+filters:
+  files:
+    prefix:
+      # We don't want to include anything from /system as this is a mainline platform
+      - system/
+      - vendor/app/DisplayLinkPresenter/
+      - vendor/lib/vndk/

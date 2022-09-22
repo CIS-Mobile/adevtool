@@ -1,0 +1,32 @@
+device:
+  name: falcon
+  vendor: nokia
+
+platform:
+  product_makefile: device/nokia/falcon/full_falcon.mk
+
+includes:
+  - ../snippets/mainline_system.yml
+  - ../snippets/gms.yml
+
+filters:
+  files:
+    prefix:
+      # We don't want to include anything from /system as this is a mainline platform
+      - system/
+      - vendor/lib/vndk/
+
+    match:
+      - system_ext/app/GmsSampleIntegration_fcn/GmsSampleIntegration_fcn.apk
+
+  overlay_keys:
+    prefix:
+      - com.hmdglobal.app.activation
+
+  overlay_values:
+    substring:
+      - com.hmdglobal.app.activation
+
+  overlay_files:
+    match:
+      - GmsResourceOverlayVelvet.apk
