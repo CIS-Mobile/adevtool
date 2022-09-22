@@ -275,8 +275,8 @@ export async function extractFirmware(
   // Generate android-info.txt from device and versions
   let androidInfo = generateAndroidInfo(
     config.device.name,
-    stockProps.get('vendor')!.get('ro.build.expect.bootloader')!,
-    stockProps.get('vendor')!.get('ro.build.expect.baseband')!,
+    stockProps.get('vendor')?.get('ro.build.expect.bootloader')! ?? '',
+    stockProps.get('vendor')?.get('ro.build.expect.baseband')! ?? '',
   )
   await fs.writeFile(`${dirs.firmware}/${ANDROID_INFO}`, androidInfo)
 
