@@ -5,6 +5,9 @@ device:
 platform:
   product_makefile: device/nokia/falcon/full_falcon.mk
 
+  sepolicy_dirs:
+    - device/qcom/sepolicy
+
 includes:
   - ../snippets/mainline_system.yml
   - ../snippets/gms.yml
@@ -15,6 +18,9 @@ filters:
       # We don't want to include anything from /system as this is a mainline platform
       - system/
       - vendor/lib/vndk/
+      # We use a vendor snapshot so ignore everything in vendor and odm
+      - vendor/
+      - odm/
 
     match:
       - system_ext/app/GmsSampleIntegration_fcn/GmsSampleIntegration_fcn.apk
@@ -25,6 +31,7 @@ filters:
 
   overlay_values:
     substring:
+      - com.google.android.ext.services
       - com.hmdglobal.app.activation
 
   overlay_files:
