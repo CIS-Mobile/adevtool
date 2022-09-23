@@ -6,6 +6,7 @@ filters:
       - ro.atrace.core.services
       - ro.com.google.clientidbase
       - ro.error.receiver.system.apps
+      - ro.com.google.gmsversion
 
     prefix:
       # Gboard
@@ -57,14 +58,17 @@ filters:
       - product/priv-app/GoogleDialer/GoogleDialer.apk
       - product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
       - product/priv-app/GoogleRestorePrebuilt/GoogleRestorePrebuilt.apk
+      - product/priv-app/Messages/Messages.apk
       - product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk
       - product/priv-app/Phonesky/Phonesky.apk
       - product/priv-app/PrebuiltBugle/PrebuiltBugle.apk
       - product/priv-app/RecorderPrebuilt/RecorderPrebuilt.apk
       - product/priv-app/SetupWizardPrebuilt/SetupWizardPrebuilt.apk
+      - product/priv-app/SetupWizard/SetupWizard.apk
       - product/priv-app/Velvet/Velvet.apk
       - product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk
       - system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk
+      - system_ext/priv-app/SetupWizard/SetupWizard.apk
       - system/etc/permissions/privapp-permissions-google.xml
 
     prefix:
@@ -72,6 +76,7 @@ filters:
       - product/priv-app/PrebuiltGmsCore/
       - product/usr/share/ime/google/
       - product/usr/srec/
+      - system_ext/priv-app/SearchLauncher
 
   overlay_values:
     substring:
