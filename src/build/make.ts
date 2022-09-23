@@ -147,6 +147,11 @@ export function serializeBoardMakefile(mk: BoardMakefile) {
     blocks.push('BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4')
   }
 
+  // Build odm?
+  if (mk.buildPartitions?.includes('odm')) {
+    blocks.push('BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4')
+  }
+
   // Build DLKM partitions?
   if (mk.buildPartitions?.includes('vendor_dlkm')) {
     blocks.push(`BOARD_USES_VENDOR_DLKMIMAGE := true
