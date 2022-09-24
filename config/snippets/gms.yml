@@ -81,3 +81,4 @@ filters:
   overlay_values:
     substring:
       - com.google.android.gms
+      - com.google.android.dialer
