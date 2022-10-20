@@ -138,6 +138,7 @@ filters:
       - product/priv-app/BetterBug/BetterBug.apk
       - product/priv-app/CarrierMetrics/CarrierMetrics.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk
+      - product/priv-app/DevicePersonalizationPrebuiltPixel2022/DevicePersonalizationPrebuiltPixel2022.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk
       - product/priv-app/HardwareInfo/HardwareInfo.apk
       - product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk
@@ -146,6 +147,7 @@ filters:
       - product/priv-app/OdadPrebuilt/OdadPrebuilt.apk
       - product/priv-app/OTAConfigNoZeroTouchPrebuilt/OTAConfigNoZeroTouchPrebuilt.apk
       - product/priv-app/PixelLiveWallpaperPrebuilt/PixelLiveWallpaperPrebuilt.apk
+      - product/priv-app/RetailDemoGooglePrebuilt/RetailDemoGooglePrebuilt.apk
       - product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk
       - product/priv-app/SCONE/SCONE.apk
       - product/priv-app/ScribePrebuilt/ScribePrebuilt.apk
@@ -196,6 +198,9 @@ filters:
       # P21
       - product/tts/google/
       - product/wallpaper/
+
+      # P22
+      - product/app/PixelThemesStub2022_and_newer/
 
   overlay_keys:
     match:
