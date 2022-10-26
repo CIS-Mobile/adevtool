@@ -7,6 +7,7 @@ filters:
       - system_ext/fonts/
       - system_ext/media/
       - product/fonts/
+      - product/etc/fonts_customization.xml
       - product/media/
       # Fonts in vendor. On Pixel devices, important camera/face unlock files are in /vendor/media.
       - vendor/fonts/
