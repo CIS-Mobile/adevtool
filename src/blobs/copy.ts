@@ -31,6 +31,12 @@ export async function copyBlobs(entries: Iterable<BlobEntry>, srcDir: string, de
         await fs.writeFile(outPath, patched)
         continue
       }
+      // Fix Qualcomm "XML declaration allowed only at the start of the document" XMLs
+      if (!xml.startsWith('<?xml version="1.0"')) {
+        let patched = xml.replace('<?xml version="1.0" encoding="UTF-8"?>', '');
+        await fs.writeFile(outPath, patched)
+        continue
+      }
     }
 
     await fs.copyFile(srcPath, outPath)
