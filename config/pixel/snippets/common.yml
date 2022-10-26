@@ -107,6 +107,7 @@ filters:
 
     prefix:
       # Another app updated by Play Store on stock
+      - product/priv-app/DevicePersonalizationPrebuiltPixel3
       - product/priv-app/DevicePersonalizationPrebuiltPixel
 
   sepolicy_dirs:

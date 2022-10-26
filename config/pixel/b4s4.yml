@@ -1,0 +1,38 @@
+device:
+  vendor: google_devices
+
+platform:
+  sepolicy_dirs:
+    - device/google/bonito-sepolicy
+
+includes:
+  - snippets/common.yml
+
+filters:
+  partitions:
+    match:
+      # TODO: Add support for OTA firmware partitions
+      - abl
+      - aop
+      - cmnlib64
+      - cmnlib
+      - devcfg
+      - hyp
+      - keymaster
+      - modem
+      - qupfw
+      - tz
+      - xbl_config
+      - xbl
+
+  dep_files:
+    match:
+      # Required by libOmxSwVencMpeg4
+      - vendor/lib/libMpeg4SwEncoder.so
+      - vendor/lib64/libMpeg4SwEncoder.so
+
+      # Required by CHRE
+      - vendor/lib/libadsprpc.so
+      - vendor/lib/libsdsprpc.so
+      - vendor/lib64/libadsprpc.so
+      - vendor/lib64/libsdsprpc.so

@@ -27,6 +27,8 @@ filters:
       - product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk
       - product/app/Maps/Maps.apk
       - product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk
+      - product/app/Music2/Music2.apk
+      - product/app/Ornament/Ornament.apk
       - product/app/Photos/Photos.apk
       - product/app/PlayAutoInstallConfig/PlayAutoInstallConfig.apk
       - product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk
@@ -44,6 +46,7 @@ filters:
       - product/etc/preferred-apps/google.xml
       - product/etc/sysconfig/google-staged-installer-whitelist.xml
       - product/framework/com.google.android.dialer.support.jar
+      - product/priv-app/AndroidAutoFullPrebuilt/AndroidAutoFullPrebuilt.apk
       - product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk
       - product/priv-app/ConfigUpdater/ConfigUpdater.apk
       - product/priv-app/FilesPrebuilt/FilesPrebuilt.apk

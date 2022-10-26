@@ -1,0 +1,8 @@
+device:
+  name: bonito
+
+platform:
+  product_makefile: device/google/bonito/aosp_bonito.mk
+
+includes:
+  - b4s4.yml
