@@ -84,7 +84,7 @@ export function sanitizeBasename(path: string) {
 }
 
 function partPathToMakePath(partition: string, subpath: string) {
-  let copyPart = partition == 'system' ? 'PRODUCT_OUT' : `TARGET_COPY_OUT_${partition.toUpperCase()}`
+  let copyPart = partition == 'system' ? 'TARGET_COPY_OUT_SYSTEM' : `TARGET_COPY_OUT_${partition.toUpperCase()}`
   return `$(${copyPart})/${subpath}`
 }
 
