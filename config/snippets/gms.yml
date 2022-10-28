@@ -19,6 +19,7 @@ filters:
       - product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk
       - product/app/Chrome-Stub/Chrome-Stub.apk
       - product/app/Chrome/Chrome.apk.gz
+      - product/app/DMAgent/DMAgent.apk
       - product/app/Drive/Drive.apk
       - product/app/GoogleContacts/GoogleContacts.apk
       - product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk
