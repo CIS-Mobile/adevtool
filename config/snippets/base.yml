@@ -32,6 +32,13 @@ filters:
       - .vdex
       - .prof
 
+  overlay_keys:
+    match:
+      - android:integer/config_multiuserMaximumUsers
+      - android:string/config_defaultDialer
+      - com.android.server.telecom:string/dialer_default_class
+      - com.android.server.telecom:string/incall_default_class
+
   props:
     match:
       # Debug
