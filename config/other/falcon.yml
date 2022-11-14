@@ -26,6 +26,10 @@ filters:
       - system_ext/app/GmsSampleIntegration_fcn/GmsSampleIntegration_fcn.apk
 
   overlay_keys:
+    match:
+      - android:integer/config_multiuserMaximumUsers
+      - com.android.server.telecom:string/dialer_default_class
+      - com.android.server.telecom:string/incall_default_class
     prefix:
       - com.hmdglobal.app.activation
 
