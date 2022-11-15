@@ -20,6 +20,7 @@ filters:
 
       # Kernel modules should be built from source or AOSP prebuilts, not copied from stock.
       - vendor/lib/modules
+      - vendor/vendor_dlkm
       - vendor_dlkm/
       - odm/lib/modules
       - odm_dlkm/
