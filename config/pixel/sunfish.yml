@@ -1,0 +1,38 @@
+device:
+  name: sunfish
+
+platform:
+  product_makefile: device/google/sunfish/aosp_sunfish.mk
+
+  sepolicy_dirs:
+    - device/google/sunfish-sepolicy
+
+includes:
+  - snippets/common.yml
+
+filters:
+  overlay_files:
+    match:
+      # Workaround for aapt2 output parsing bug
+      - HbmSVManager__auto_generated_rro_vendor.apk
+
+  partitions:
+    match:
+      # TODO: add support for OTA firmware partitions.
+      - abl
+      - aop
+      - devcfg
+      - hyp
+      - keymaster
+      - modem
+      - qupfw
+      - tz
+      - uefisecapp
+      - xbl
+      - xbl_config
+
+  dep_files:
+    match:
+      # Required by CHRE
+      - vendor/lib/libadsprpc.so
+      - vendor/lib64/libadsprpc.so

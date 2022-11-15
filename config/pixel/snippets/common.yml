@@ -107,6 +107,7 @@ filters:
 
     prefix:
       # Another app updated by Play Store on stock
+      - product/priv-app/DevicePersonalizationPrebuiltPixel4
       - product/priv-app/DevicePersonalizationPrebuiltPixel3
       - product/priv-app/DevicePersonalizationPrebuiltPixel
 
@@ -123,6 +124,7 @@ filters:
       - product/app/DiagnosticsToolPrebuilt/DiagnosticsToolPrebuilt.apk
       - product/app/MarkupGoogle/MarkupGoogle.apk
       - product/app/MicropaperPrebuilt/MicropaperPrebuilt.apk
+      - product/app/NexusWallpapersStubPrebuilt2020_midyear/NexusWallpapersStubPrebuilt2020_midyear.apk
       - product/app/NgaResources/NgaResources.apk
       - product/app/PixelThemesStub/PixelThemesStub.apk
       - product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk
@@ -134,6 +136,7 @@ filters:
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
       - product/priv-app/BetterBug/BetterBug.apk
       - product/priv-app/CarrierMetrics/CarrierMetrics.apk
+      - product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk
       - product/priv-app/HardwareInfo/HardwareInfo.apk
       - product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk
       - product/priv-app/MaestroPrebuilt/MaestroPrebuilt.apk
