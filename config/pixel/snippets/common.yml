@@ -176,6 +176,7 @@ filters:
       - vendor/etc/default-permissions/default-permissions_talkback.xml
 
       # Beta
+      - system/app/BluetoothMigrationForBeta3User/BluetoothMigrationForBeta3User.apk
       - system_ext/priv-app/YadaYada/YadaYada.apk
       - product/priv-app/BetaFeedback/BetaFeedback.apk
 
