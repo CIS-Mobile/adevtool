@@ -127,6 +127,7 @@ filters:
       - product/app/NexusWallpapersStubPrebuilt2020_midyear/NexusWallpapersStubPrebuilt2020_midyear.apk
       - product/app/NgaResources/NgaResources.apk
       - product/app/PixelThemesStub/PixelThemesStub.apk
+      - product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk
       - product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk
       - product/app/SafetyRegulatoryInfo/SafetyRegulatoryInfo.apk
       - product/app/SoundAmplifierPrebuilt/SoundAmplifierPrebuilt.apk
@@ -136,10 +137,12 @@ filters:
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
       - product/priv-app/BetterBug/BetterBug.apk
       - product/priv-app/CarrierMetrics/CarrierMetrics.apk
+      - product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk
       - product/priv-app/HardwareInfo/HardwareInfo.apk
       - product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk
       - product/priv-app/MaestroPrebuilt/MaestroPrebuilt.apk
+      - product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk
       - product/priv-app/OdadPrebuilt/OdadPrebuilt.apk
       - product/priv-app/OTAConfigNoZeroTouchPrebuilt/OTAConfigNoZeroTouchPrebuilt.apk
       - product/priv-app/PixelLiveWallpaperPrebuilt/PixelLiveWallpaperPrebuilt.apk
@@ -151,6 +154,7 @@ filters:
       - product/priv-app/Showcase/Showcase.apk
       - product/priv-app/TipsPrebuilt/TipsPrebuilt.apk
       - system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk
+      - system_ext/priv-app/FactoryOtaPrebuilt/FactoryOtaPrebuilt.apk
       - system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
       - system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk
       - system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk
@@ -169,6 +173,7 @@ filters:
       - product/etc/permissions/com.google.android.odad.xml
 
       # Diagnostics
+      - product/priv-app/BetterBugStub/BetterBugStub.apk
       - product/priv-app/DiagnosticsToolPrebuilt/DiagnosticsToolPrebuilt.apk
       - product/etc/permissions/com.google.android.apps.diagnosticstool.xml
 
