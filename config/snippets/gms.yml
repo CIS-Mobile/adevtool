@@ -91,12 +91,10 @@ filters:
       - system_ext/priv-app/SetupWizard/SetupWizard.apk
       - system/etc/permissions/privapp-permissions-google.xml
     prefix:
-      - product/etc/permissions/privapp-permissions-google-
       - product/etc/sysconfig/preinstalled-packages-
       - product/priv-app/PrebuiltGmsCore/
       - product/usr/share/ime/google/
       - product/usr/srec/
-      - system_ext/etc/permissions/privapp-permissions-google-
       - system_ext/priv-app/SearchLauncher
 
   overlay_values:
