@@ -1,0 +1,77 @@
+filters:
+  files:
+    match:
+      - product/app/DeviceStatisticsService/DeviceStatisticsService.apk
+      - system_ext/app/QdcmFF/QdcmFF.apk
+      - system_ext/app/aptxacu/aptxacu.apk
+      - system_ext/app/aptxui/aptxui.apk
+      - system_ext/app/workloadclassifier/workloadclassifier.apk
+      - system_ext/bin/aptxalsOverlayCreateProject.sh
+      - system_ext/bin/bt_logger
+      - system_ext/bin/dun-server
+      - system_ext/etc/init/init.qti.bt.logger.rc
+      - system_ext/etc/permissions/privapp-permissions-aptxals.xml
+      - system_ext/etc/permissions/qti_supplicant_interface.xml
+      - system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml
+      - system_ext/lib/libbluetooth_qti.so
+      - system_ext/lib/libbt-logClient.so
+      - system_ext/lib/libbtconfigstore.so
+      - system_ext/lib/libcomposerextn.qti.so
+      - system_ext/lib/libqcomfm_jni.so
+      - system_ext/lib/libqti_workloadclassifiermodel.so
+      - system_ext/lib/libsmomoconfig.qti.so
+      - system_ext/lib/libxrvd.qti.so
+      - system_ext/lib64/libadapter.dylib.so
+      - system_ext/lib64/libbluetooth_qti.so
+      - system_ext/lib64/libbt-logClient.so
+      - system_ext/lib64/libbtconfigstore.so
+      - system_ext/lib64/libcomposerextn.qti.so
+      - system_ext/lib64/libmmio.dylib.so
+      - system_ext/lib64/libqcomfm_jni.so
+      - system_ext/lib64/libqti_workloadclassifiermodel.so
+      - system_ext/lib64/libsmomoconfig.qti.so
+      - system_ext/lib64/libxrvd.qti.so
+      - system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
+      - system_ext/priv-app/aptxals/aptxals.apk
+      - vendor/bin/hw/android.hardware.biometrics.face@1.0-service.faceauth
+      - vendor/bin/hw/android.hardware.boot@1.1-service
+      - vendor/default.prop
+      - vendor/etc/init/android.hardware.biometrics.face@1.0-service.faceauth.rc
+      - vendor/etc/init/android.hardware.boot@1.1-service.rc
+      - vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml
+      - vendor/lib/hw/android.hardware.boot@1.0-impl-1.1-qti.so
+      - vendor/lib64/hw/android.hardware.boot@1.0-impl-1.1-qti.so
+
+    prefix:
+      - system/
+      - system_ext/etc/bluetooth/
+      - vendor/lib/vndk/
+
+  overlay_keys:
+    match:
+      - android:string/config_availableColorModes
+      - com.android.settings:string/config_color_mode_options_strings
+      - com.android.settings:string/config_color_mode_options_values
+
+  props:
+    match:
+      - ro.bluetooth.library_name
+      - ro.bootimage.build.date
+      - ro.bootimage.build.date.utc
+      - ro.bootimage.build.fingerprint
+      - ro.build.keys
+      - ro.build.product.name
+      - ro.build.system_root_image
+      - ro.product.board
+
+    prefix:
+      # adevtool doesn't play nicely with imports so exclude them.
+      - import
+
+  sepolicy_dirs:
+    match:
+      # Exclude API 31 QCOM policies.
+      - device/qcom/sepolicy/generic/prebuilts/api/31.0/private
+
+      # Exclude userdebug policies.
+      - device/qcom/sepolicy_vndr/generic/vendor/test
