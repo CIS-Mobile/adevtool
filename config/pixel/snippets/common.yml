@@ -283,6 +283,7 @@ filters:
       - android:string/default_wallpaper_component
       - android:bool/config_pinnerHomeApp
       - com.android.settings:string-array/slice_allowlist_package_names
+      - android:string/config_wallpaperCropperPackage
 
       # Intentionally included: attention, speech recognition, search UI, smartspace, translation
       - android:string/config_defaultAccessibilityService
