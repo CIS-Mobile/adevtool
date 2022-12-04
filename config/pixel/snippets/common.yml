@@ -137,6 +137,7 @@ filters:
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
       - product/priv-app/BetterBug/BetterBug.apk
       - product/priv-app/CarrierMetrics/CarrierMetrics.apk
+      - product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel2022/DevicePersonalizationPrebuiltPixel2022.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk
