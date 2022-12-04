@@ -289,6 +289,10 @@ filters:
       - android:bool/config_pinnerHomeApp
       - com.android.settings:string-array/slice_allowlist_package_names
       - android:string/config_wallpaperCropperPackage
+      - com.android.permissioncontroller/PermissionControllerStyles:string/config_headlineFontFamily
+      - com.google.android.pixel.setupwizard/PixelSetupWizard:string/demo_device_admin_component_name
+      - com.google.android.pixel.setupwizard/PixelSetupWizard:string/demo_device_admin_download_location
+      - com.google.android.pixel.setupwizard/PixelSetupWizard:string/demo_device_admin_signature_checksum
 
       # Intentionally included: attention, speech recognition, search UI, smartspace, translation
       - android:string/config_defaultAccessibilityService
