@@ -3,19 +3,43 @@ device:
   vendor: getac
 
 platform:
-  product_makefile: device/getac/zx10/aosp_zx10.mk
-
-  sepolicy_dirs:
-    - device/getac/zx10-sepolicy
+  product_makefile: device/getac/zx10/altos_zx10.mk
 
 includes:
   - ../snippets/mainline_system.yml
   - ../snippets/gms.yml
+  - snippets/qcom.yml
 
 filters:
+  dep_files:
+    match:
+      - vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
+      - vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
+      - vendor/etc/vintf/manifest/power.xml
+
   files:
+    match:
+      - product/app/GmsSampleIntegration/GmsSampleIntegration.apk
+      - product/etc/permissions/privapp-permissions-soundrecorder.xml
+      - product/priv-app/QtiSoundRecorder/QtiSoundRecorder.apk
+      - product/build.prop
+      - system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
+      - system_ext/build.prop
+      - vendor/app/app-camera/app-camera.apk
+      - vendor/app/app-deploy-center/app-deploy-center.apk
+      - vendor/app/app-device-manual/app-device-manual.apk
+      - vendor/app/app-getac-drivesafety/app-getac-drivesafety.apk
+      - vendor/app/app-getac-ime/app-getac-ime.apk
+      - vendor/app/app-getac-settings/app-getac-settings.apk
+      - vendor/app/app-update-center/app-update-center.apk
+      - vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
+      - vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
+      - vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
+
     prefix:
       # We don't want to include anything from /system as this is a mainline platform
       - system/
       - vendor/app/DisplayLinkPresenter/
+      - vendor/etc/selinux/
       - vendor/lib/vndk/
+      - vendor/odm
