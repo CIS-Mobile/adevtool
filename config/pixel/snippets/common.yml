@@ -156,6 +156,7 @@ filters:
       - product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk
       - product/priv-app/Showcase/Showcase.apk
       - product/priv-app/TipsPrebuilt/TipsPrebuilt.apk
+      - product/priv-app/WallpaperEffect/WallpaperEffect.apk
       - system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk
       - system_ext/priv-app/FactoryOtaPrebuilt/FactoryOtaPrebuilt.apk
       - system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
