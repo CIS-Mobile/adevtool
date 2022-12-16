@@ -6,6 +6,11 @@ includes:
   - common.yml
 
 filters:
+  files:
+    match:
+      - product/etc/permissions/android.hardware.biometrics.face.xml
+      - system_ext/priv-app/SettingsGoogleFutureFaceEnroll/SettingsGoogleFutureFaceEnroll.apk
+
   partitions:
     match:
       # AOSP doesn't build chained vendor vbmeta by default
@@ -29,3 +34,28 @@ filters:
       - vendor/lib/libOpenCL.so
       - vendor/lib64/egl/libGLES_mali.so
       - vendor/lib64/libOpenCL.so
+
+  overlay_keys:
+    match:
+      - android:array/config_face_acquire_keyguard_ignorelist
+      - android:array/config_face_acquire_vendor_biometricprompt_ignorelist
+      - android:array/config_face_acquire_vendor_enroll_ignorelist
+      - android:array/config_face_acquire_vendor_keyguard_ignorelist
+      - android:array/face_acquired_vendor
+      - android:integer-array/config_face_acquire_biometricprompt_ignorelist
+      - android:integer-array/config_face_acquire_enroll_ignorelist
+      - android:string-array/face_error_vendor
+      - android:string/face_recalibrate_notification_content
+      - android:string/face_recalibrate_notification_name
+      - android:string/face_recalibrate_notification_title
+      - com.android.settings:dimen/face_enroll_intro_illustration_margin_bottom
+      - com.android.settings:dimen/face_preview_scale
+      - com.android.settings:dimen/face_preview_translate_x
+      - com.android.settings:dimen/face_preview_translate_y
+      - com.android.settings:integer-array/face_enroll_primary_buckets
+      - com.android.settings:string/biometrics_unlock_set_unlock_password
+      - com.android.settings:string/biometrics_unlock_set_unlock_pattern
+      - com.android.settings:string/biometrics_unlock_set_unlock_pin
+      - com.android.settings:string/config_face_enroll_traffic_light_package
+      - com.android.systemui:integer-array/config_face_auth_props
+      - com.google.android.settings.future.biometrics.faceenroll:dimen/face_preview_scale
