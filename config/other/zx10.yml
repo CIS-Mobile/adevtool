@@ -35,8 +35,11 @@ filters:
       - vendor/app/app-getac-settings/app-getac-settings.apk
       - vendor/app/app-update-center/app-update-center.apk
       - vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
+      - vendor/bin/hw/vendor.getac.gasp@1.0-service
       - vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
+      - vendor/etc/init/vendor.getac.gasp@1.0-service.rc
       - vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
+      - vendor/lib64/vendor.getac.gasp@1.0.so
 
     prefix:
       # We don't want to include anything from /system as this is a mainline platform
