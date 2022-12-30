@@ -23,7 +23,9 @@ filters:
       - product/etc/permissions/privapp-permissions-soundrecorder.xml
       - product/priv-app/QtiSoundRecorder/QtiSoundRecorder.apk
       - product/build.prop
+      - system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
       - system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
+      - system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk
       - system_ext/build.prop
       - vendor/app/app-camera/app-camera.apk
       - vendor/app/app-deploy-center/app-deploy-center.apk
