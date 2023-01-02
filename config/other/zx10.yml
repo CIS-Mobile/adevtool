@@ -48,3 +48,9 @@ filters:
       - vendor/etc/selinux/
       - vendor/lib/vndk/
       - vendor/odm
+
+  props:
+    match:
+      - ro.product.cpu.abilist
+      - ro.product.cpu.abilist32
+      - ro.product.cpu.abilist64
