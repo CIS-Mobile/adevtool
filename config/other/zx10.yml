@@ -51,6 +51,7 @@ filters:
 
   props:
     match:
+      - ro.nfc.port
       - ro.product.cpu.abilist
       - ro.product.cpu.abilist32
       - ro.product.cpu.abilist64
