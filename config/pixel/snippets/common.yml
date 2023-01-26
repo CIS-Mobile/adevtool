@@ -103,7 +103,7 @@ filters:
       - product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk
 
     prefix:
-      # Another app updated by Play Store on stock
+      - product/app/PixelCameraServices
       - product/priv-app/DevicePersonalizationPrebuiltPixel
 
   sepolicy_dirs:
