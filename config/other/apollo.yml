@@ -28,6 +28,7 @@ filters:
       - system_ext/app/GmsSampleIntegration_apo/GmsSampleIntegration_apo.apk
       - system_ext/app/HMDFMRadio/HMDFMRadio.apk
       - system_ext/priv-app/HMDSettingsProvider/HMDSettingsProvider.apk
+      - vendor/etc/vintf/manifest/manifest.xml
 
     prefix:
       - odm/6000F/

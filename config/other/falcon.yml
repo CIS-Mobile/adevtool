@@ -28,6 +28,9 @@ filters:
       - system_ext/app/GmsSampleIntegration_fcn/GmsSampleIntegration_fcn.apk
       - system_ext/app/HMDFMRadio/HMDFMRadio.apk
       - system_ext/priv-app/HMDSettingsProvider/HMDSettingsProvider.apk
+      - vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
+      - vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc
+      - vendor/etc/vintf/manifest/manifest.xml
 
     prefix:
       - odm/600EEA/
