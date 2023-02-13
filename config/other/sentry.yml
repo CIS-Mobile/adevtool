@@ -1,0 +1,70 @@
+device:
+  name: sentry
+  vendor: nokia
+
+platform:
+  product_makefile: device/nokia/sentry/altos_sentry.mk
+
+  sepolicy_dirs:
+    - device/qcom/sepolicy_vndr
+    - device/qcom/sepolicy
+
+includes:
+  - snippets/qcom.yml
+  - ../snippets/mainline_system.yml
+  - ../snippets/gms.yml
+
+filters:
+  dep_files:
+    match:
+      - vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
+      - vendor/etc/vintf/manifest/power.xml
+      - vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
+      - vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
+
+  files:
+    match:
+      - product/app/WallpaperPicker_snt/WallpaperPicker_snt.apk
+      - system_ext/app/GmsSampleIntegration_snt/GmsSampleIntegration_snt.apk
+      - system_ext/app/HMDFMRadio/HMDFMRadio.apk
+      - system_ext/priv-app/HMDSettingsProvider/HMDSettingsProvider.apk
+      - vendor/etc/vintf/manifest/manifest.xml
+
+    prefix:
+      - odm/6000F/
+      - odm/600CLA/
+      - odm/600EEA/
+      - odm/600RU/
+      - odm/600TEL/
+      - odm/600WW/
+      - odm/preload_apps/
+      - product/6000F/
+      - product/600CLA/
+      - product/600EEA/
+      - product/600RU/
+      - product/600TEL/
+      - product/600WW/
+      - product/etc/res/
+
+  partitions:
+    match:
+      - abl
+      - bluetooth
+      - core_nhlos
+      - devcfg
+      - dsp
+      - featenabler
+      - hyp
+      - imagefv
+      - keymaster
+      - modem
+      - qupfw
+      - rpm
+      - tz
+      - uefisecapp
+      - xbl_config
+      - xbl
+
+  props:
+    match:
+      - ro.product.nickname
