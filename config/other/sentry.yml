@@ -24,10 +24,21 @@ filters:
 
   files:
     match:
+      # AOSP Apps
+      - product/app/Calendar/Calendar.apk
+      - system_ext/priv-app/Mms/Mms.apk
+      - system_ext/etc/permissions/privapp-permissions-mms.xml
       - product/app/WallpaperPicker_snt/WallpaperPicker_snt.apk
+
+      # HMD Apps
+      - odm/logtools/app/OdmGetlogapk/OdmGetlogapk.apk
       - system_ext/app/GmsSampleIntegration_snt/GmsSampleIntegration_snt.apk
       - system_ext/app/HMDFMRadio/HMDFMRadio.apk
       - system_ext/priv-app/HMDSettingsProvider/HMDSettingsProvider.apk
+
+      # QTI Apps
+      - system_ext/priv-app/MSDC_UI/MSDC_UI.apk
+
       - vendor/etc/vintf/manifest/manifest.xml
 
     prefix:

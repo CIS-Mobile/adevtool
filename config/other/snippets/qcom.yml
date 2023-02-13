@@ -32,6 +32,7 @@ filters:
       - system_ext/lib64/libsmomoconfig.qti.so
       - system_ext/lib64/libxrvd.qti.so
       - system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
+      - system_ext/priv-app/QtiDialer/QtiDialer.apk
       - system_ext/priv-app/aptxals/aptxals.apk
       - vendor/bin/hw/android.hardware.biometrics.face@1.0-service.faceauth
       - vendor/bin/hw/android.hardware.boot@1.1-service
