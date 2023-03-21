@@ -189,6 +189,9 @@ filters:
       - system_ext/priv-app/YadaYada/YadaYada.apk
       - product/priv-app/BetaFeedback/BetaFeedback.apk
 
+      # Bluetooth
+      - system/app/GoogleBluetoothLegacyMigration/GoogleBluetoothLegacyMigration.apk
+
     prefix:
       # (Live) wallpapers
       - product/app/WallpapersBReel
@@ -295,6 +298,7 @@ filters:
       - com.google.android.pixel.setupwizard/PixelSetupWizard:string/demo_device_admin_component_name
       - com.google.android.pixel.setupwizard/PixelSetupWizard:string/demo_device_admin_download_location
       - com.google.android.pixel.setupwizard/PixelSetupWizard:string/demo_device_admin_signature_checksum
+      - android:string/config_systemBluetoothStack
 
       # Intentionally included: attention, speech recognition, search UI, smartspace, translation
       - android:string/config_defaultAccessibilityService
