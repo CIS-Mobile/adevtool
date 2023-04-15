@@ -54,6 +54,11 @@ filters:
       - com.android.settings:string/config_color_mode_options_strings
       - com.android.settings:string/config_color_mode_options_values
 
+  overlay_values:
+    substring:
+      # QCOM Dialer
+      - org.codeaurora.dialer
+
   props:
     match:
       - ro.bluetooth.library_name
