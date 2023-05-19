@@ -25,6 +25,7 @@ filters:
       - product/app/Chrome/Chrome.apk.gz
       - product/app/Chrome/Chrome.apk
       - product/app/com.google.android.modulemetadata/com.google.android.modulemetadata.apk
+      - product/app/com.google.mainline.adservices/com.google.mainline.adservices.apk
       - product/app/com.google.mainline.telemetry/com.google.mainline.telemetry.apk
       - product/app/DeskClockGoogle/DeskClockGoogle.apk
       - product/app/DMAgent/DMAgent.apk

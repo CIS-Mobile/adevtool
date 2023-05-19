@@ -1,6 +1,7 @@
 filters:
   files:
     match:
+      - product/app/Calendar/Calendar.apk
       - product/app/DeviceStatisticsService/DeviceStatisticsService.apk
       - system_ext/app/QdcmFF/QdcmFF.apk
       - system_ext/app/aptxacu/aptxacu.apk
@@ -11,6 +12,7 @@ filters:
       - system_ext/bin/dun-server
       - system_ext/etc/init/init.qti.bt.logger.rc
       - system_ext/etc/permissions/privapp-permissions-aptxals.xml
+      - system_ext/etc/permissions/privapp-permissions-mms.xml
       - system_ext/etc/permissions/qti_supplicant_interface.xml
       - system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml
       - system_ext/lib/libbluetooth_qti.so
@@ -31,6 +33,8 @@ filters:
       - system_ext/lib64/libqti_workloadclassifiermodel.so
       - system_ext/lib64/libsmomoconfig.qti.so
       - system_ext/lib64/libxrvd.qti.so
+      - system_ext/priv-app/MSDC_UI/MSDC_UI.apk
+      - system_ext/priv-app/Mms/Mms.apk
       - system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
       - system_ext/priv-app/QtiDialer/QtiDialer.apk
       - system_ext/priv-app/aptxals/aptxals.apk
@@ -47,6 +51,12 @@ filters:
       - system/
       - system_ext/etc/bluetooth/
       - vendor/lib/vndk/
+
+  # Resource overlay APK file names (to work around aapt2 parsing bugs)
+  # Only base file name, not full path.
+  overlay_files:
+    match:
+      - aptxalsOverlay.apk
 
   overlay_keys:
     match:
@@ -76,8 +86,10 @@ filters:
 
   sepolicy_dirs:
     match:
-      # Exclude API 31 QCOM policies.
       - device/qcom/sepolicy/generic/prebuilts/api/31.0/private
+      - device/qcom/sepolicy/generic/prebuilts/api/32.0/private
+      - device/qcom/sepolicy/generic/private
+      - device/qcom/sepolicy_vndr/legacy/vendor/common
 
       # Exclude userdebug policies.
       - device/qcom/sepolicy_vndr/generic/vendor/test

@@ -1,0 +1,32 @@
+device:
+  name: shadow
+  vendor: nokia
+
+platform:
+  product_makefile: device/nokia/shadow/altos_shadow.mk
+
+  sepolicy_dirs:
+    - device/qcom/sepolicy_vndr
+    - device/qcom/sepolicy
+
+includes:
+  - snippets/hmd.yml
+  - snippets/qcom.yml
+  - ../snippets/mainline_system.yml
+  - ../snippets/gms.yml
+
+filters:
+  dep_files:
+    match:
+      - vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
+      - vendor/etc/vintf/manifest/power.xml
+      - vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
+      - vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
+
+  files:
+    match:
+      # AOSP Apps
+      - product/app/WallpaperPicker_sdw/WallpaperPicker_sdw.apk
+
+      # HMD Apps
+      - system_ext/app/GmsSampleIntegration_sdw/GmsSampleIntegration_sdw.apk
