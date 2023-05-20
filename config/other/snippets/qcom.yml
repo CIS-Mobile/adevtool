@@ -3,6 +3,7 @@ filters:
     match:
       - product/app/Calendar/Calendar.apk
       - product/app/DeviceStatisticsService/DeviceStatisticsService.apk
+      - system_ext/app/BluetoothDsDaService/BluetoothDsDaService.apk
       - system_ext/app/QdcmFF/QdcmFF.apk
       - system_ext/app/aptxacu/aptxacu.apk
       - system_ext/app/aptxui/aptxui.apk

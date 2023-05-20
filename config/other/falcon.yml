@@ -10,6 +10,7 @@ platform:
     - device/qcom/sepolicy
 
 includes:
+  - snippets/hmd.yml
   - snippets/qcom.yml
   - ../snippets/mainline_system.yml
   - ../snippets/gms.yml
@@ -26,44 +27,3 @@ filters:
     match:
       - product/app/WallpaperPicker_fcn/WallpaperPicker_fcn.apk
       - system_ext/app/GmsSampleIntegration_fcn/GmsSampleIntegration_fcn.apk
-      - system_ext/app/HMDFMRadio/HMDFMRadio.apk
-      - system_ext/priv-app/HMDSettingsProvider/HMDSettingsProvider.apk
-      - vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs
-      - vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc
-      - vendor/etc/vintf/manifest/manifest.xml
-
-    prefix:
-      - odm/600EEA/
-      - odm/600FD/
-      - odm/600RU/
-      - odm/600WW/
-      - odm/preload_apps/
-      - product/600EEA/
-      - product/600FD/
-      - product/600RU/
-      - product/600WW/
-      - product/etc/res/
-
-  partitions:
-    match:
-      - abl
-      - bluetooth
-      - core_nhlos
-      - devcfg
-      - dsp
-      - featenabler
-      - hyp
-      - imagefv
-      - keymaster
-      - modem
-      - qupfw
-      - rpm
-      - tz
-      - uefisecapp
-      - xbl_config
-      - xbl
-
-
-  props:
-    match:
-      - ro.product.nickname
