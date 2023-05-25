@@ -43,3 +43,9 @@ filters:
   props:
     match:
       - ro.product.nickname
+
+      # Breaks boot on Nokia X30 5G.
+      - ro.lmk.use_psi
+
+      # Debug
+      - ro.lmk.debug
