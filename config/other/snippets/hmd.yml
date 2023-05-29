@@ -3,6 +3,7 @@ filters:
     match:
       - odm/logtools/app/OdmGetlogapk/OdmGetlogapk.apk
       - odm/priv-app/OntimCit/OntimCit.apk
+      - system_ext/app/HMDFMRadio/lib/arm64/libqcomfm_jni.so
       - system_ext/app/HMDFMRadio/HMDFMRadio.apk
       - system_ext/priv-app/HMDSettingsProvider/HMDSettingsProvider.apk
       - system_ext/priv-app/Memorycleaner/Memorycleaner.apk
@@ -11,8 +12,10 @@ filters:
 
     prefix:
       - odm/600
+      - odm/6EU
       - odm/preload_apps
       - product/600
+      - product/6EU
       - product/etc/res
 
   # Resource overlay APK file names (to work around aapt2 parsing bugs)

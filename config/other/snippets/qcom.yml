@@ -7,6 +7,7 @@ filters:
       - system_ext/app/QdcmFF/QdcmFF.apk
       - system_ext/app/aptxacu/aptxacu.apk
       - system_ext/app/aptxui/aptxui.apk
+      - system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
       - system_ext/app/workloadclassifier/workloadclassifier.apk
       - system_ext/bin/aptxalsOverlayCreateProject.sh
       - system_ext/bin/bt_logger
@@ -22,7 +23,10 @@ filters:
       - system_ext/lib/libcomposerextn.qti.so
       - system_ext/lib/libqcomfm_jni.so
       - system_ext/lib/libqti_workloadclassifiermodel.so
+      - system_ext/lib/libsecureui_svcsock_system.so
+      - system_ext/lib/libsecureuisvc_jni.so
       - system_ext/lib/libsmomoconfig.qti.so
+      - system_ext/lib/libsystemhelper_jni.so
       - system_ext/lib/libxrvd.qti.so
       - system_ext/lib64/libadapter.dylib.so
       - system_ext/lib64/libbluetooth_qti.so
@@ -32,13 +36,18 @@ filters:
       - system_ext/lib64/libmmio.dylib.so
       - system_ext/lib64/libqcomfm_jni.so
       - system_ext/lib64/libqti_workloadclassifiermodel.so
+      - system_ext/lib64/libsecureui_svcsock_system.so
+      - system_ext/lib64/libsecureuisvc_jni.so
       - system_ext/lib64/libsmomoconfig.qti.so
+      - system_ext/lib64/libsystemhelper_jni.so
       - system_ext/lib64/libxrvd.qti.so
       - system_ext/priv-app/MSDC_UI/MSDC_UI.apk
       - system_ext/priv-app/Mms/Mms.apk
       - system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
       - system_ext/priv-app/QtiDialer/QtiDialer.apk
       - system_ext/priv-app/aptxals/aptxals.apk
+      - system_ext/priv-app/com.qualcomm.qti.services.systemhelper/lib/arm64/libsystemhelper_jni.so
+      - system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk
       - vendor/bin/hw/android.hardware.biometrics.face@1.0-service.faceauth
       - vendor/bin/hw/android.hardware.boot@1.1-service
       - vendor/default.prop
