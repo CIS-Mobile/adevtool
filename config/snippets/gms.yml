@@ -40,6 +40,7 @@ filters:
       - product/app/LatinImeGoogle/LatinImeGoogle.apk
       - product/app/LocationHistoryPrebuilt/LocationHistoryPrebuilt.apk
       - product/app/Maps/Maps.apk
+      - product/app/Messages/Messages.apk
       - product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk
       - product/app/Music2/Music2.apk
       - product/app/Ornament/Ornament.apk
