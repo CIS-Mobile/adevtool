@@ -132,6 +132,7 @@ filters:
       - product/app/SafetyRegulatoryInfo/SafetyRegulatoryInfo.apk
       - product/app/SoundAmplifierPrebuilt/SoundAmplifierPrebuilt.apk
       - product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk
+      - product/app/WallpaperEmojiPrebuilt/WallpaperEmojiPrebuilt.apk
       - product/etc/permissions/com.google.android.hardwareinfo.xml
       - product/framework/libhwinfo.jar
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
