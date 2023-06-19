@@ -30,6 +30,7 @@ filters:
       - product/app/DeskClockGoogle/DeskClockGoogle.apk
       - product/app/DMAgent/DMAgent.apk
       - product/app/Drive/Drive.apk
+      - product/app/Duo/Duo.apk
       - product/app/Gmail2/Gmail2.apk
       - product/app/GoogleContacts/GoogleContacts.apk
       - product/app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk
