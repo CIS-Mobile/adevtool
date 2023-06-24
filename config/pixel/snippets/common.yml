@@ -143,6 +143,7 @@ filters:
       - product/priv-app/DevicePersonalizationPrebuiltPixel2022/DevicePersonalizationPrebuiltPixel2022.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk
       - product/priv-app/HardwareInfo/HardwareInfo.apk
+      - product/priv-app/HealthConnectPrebuilt/HealthConnectPrebuilt.apk
       - product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk
       - product/priv-app/MaestroPrebuilt/MaestroPrebuilt.apk
       - product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk
