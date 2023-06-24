@@ -122,30 +122,40 @@ filters:
       - product/app/DevicePolicyPrebuilt/DevicePolicyPrebuilt.apk
       - product/app/DeviceStatisticsService/DeviceStatisticsService.apk
       - product/app/DiagnosticsToolPrebuilt/DiagnosticsToolPrebuilt.apk
+      - product/app/HealthConnectHideApps/HealthConnectHideApps.apk
+      - product/app/LatinIMEGooglePrebuilt2023Tablet/LatinIMEGooglePrebuilt2023Tablet.apk
       - product/app/MarkupGoogle/MarkupGoogle.apk
       - product/app/MicropaperPrebuilt/MicropaperPrebuilt.apk
       - product/app/NexusWallpapersStubPrebuilt2020_midyear/NexusWallpapersStubPrebuilt2020_midyear.apk
       - product/app/NgaResources/NgaResources.apk
       - product/app/PixelThemesStub/PixelThemesStub.apk
+      - product/app/PlayBooksPrebuilt/PlayBooksPrebuilt.apk
       - product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk
       - product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk
+      - product/app/SafetyHubHideApps/SafetyHubHideApps.apk
       - product/app/SafetyRegulatoryInfo/SafetyRegulatoryInfo.apk
       - product/app/SoundAmplifierPrebuilt/SoundAmplifierPrebuilt.apk
       - product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk
       - product/app/WallpaperEmojiPrebuilt/WallpaperEmojiPrebuilt.apk
+      - product/app/YouTubeKidsPrebuilt/YouTubeKidsPrebuilt.apk
       - product/etc/permissions/com.google.android.hardwareinfo.xml
       - product/framework/libhwinfo.jar
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+      - product/priv-app/AndroidMediaShell/AndroidMediaShell.apk
       - product/priv-app/BetterBug/BetterBug.apk
       - product/priv-app/CarrierMetrics/CarrierMetrics.apk
+      - product/priv-app/CastAuthPrebuilt/CastAuthPrebuilt.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel2020/DevicePersonalizationPrebuiltPixel2020.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel2021/DevicePersonalizationPrebuiltPixel2021.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel2022/DevicePersonalizationPrebuiltPixel2022.apk
       - product/priv-app/DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk
+      - product/priv-app/DevicePersonalizationPrebuiltPixelTablet2023/DevicePersonalizationPrebuiltPixelTablet2023.apk
+      - product/priv-app/GoogleHomePrebuilt/GoogleHomePrebuilt.apk
       - product/priv-app/HardwareInfo/HardwareInfo.apk
       - product/priv-app/HealthConnectPrebuilt/HealthConnectPrebuilt.apk
       - product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk
       - product/priv-app/MaestroPrebuilt/MaestroPrebuilt.apk
+      - product/priv-app/KidsHomePrebuilt/KidsHomePrebuilt.apk
       - product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk
       - product/priv-app/OdadPrebuilt/OdadPrebuilt.apk
       - product/priv-app/OTAConfigNoZeroTouchPrebuilt/OTAConfigNoZeroTouchPrebuilt.apk
@@ -157,9 +167,12 @@ filters:
       - product/priv-app/SecurityHubPrebuilt/SecurityHubPrebuilt.apk
       - product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk
       - product/priv-app/Showcase/Showcase.apk
+      - product/priv-app/SmartDisplayPrebuilt/SmartDisplayPrebuilt.apk
       - product/priv-app/TipsPrebuilt/TipsPrebuilt.apk
       - product/priv-app/WallpaperEffect/WallpaperEffect.apk
       - system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk
+      - system_ext/priv-app/DockManagerPrebuilt/DockManagerPrebuilt.apk
+      - system_ext/priv-app/DockSetup/DockSetup.apk
       - system_ext/priv-app/FactoryOtaPrebuilt/FactoryOtaPrebuilt.apk
       - system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
       - system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk
@@ -168,6 +181,7 @@ filters:
       - system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk
       - system_ext/priv-app/StorageManagerGoogle/StorageManagerGoogle.apk
       - system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk
+      - system_ext/priv-app/SystemUITitan/SystemUITitan.apk
       - system_ext/priv-app/UvExposureReporter/UvExposureReporter.apk
       - system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk
 
