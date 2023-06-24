@@ -63,9 +63,13 @@ export async function writeFirmwareImages(images: FirmwareImages, fwDir: string)
 }
 
 export function generateAndroidInfo(device: string, blVersion: string, radioVersion: string) {
+  if (radioVersion) {
+    var basebandVersion = `require version-baseband=${radioVersion}`;
+  }
+
   return `require board=${device}
 
 require version-bootloader=${blVersion}
-require version-baseband=${radioVersion}
+${basebandVersion || ''}
 `
 }

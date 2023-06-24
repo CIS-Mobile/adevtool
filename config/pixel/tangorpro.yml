@@ -1,0 +1,40 @@
+device:
+  name: tangorpro
+
+platform:
+  product_makefile: device/google/tangorpro/aosp_tangorpro.mk
+
+includes:
+  - snippets/2022.yml
+
+filters:
+  overlay_files:
+    match:
+      # Workaround for aapt2 output parsing bug.
+      - DockSetup__auto_generated_rro_product.apk
+      - Flipendo__auto_generated_rro_product.apk
+      - SettingsGoogle__auto_generated_rro_product.apk
+      - SettingsGoogleTangorproOverlay.apk
+      - SettingsOverlayGTU8P.apk
+      - StorageManagerGoogle__auto_generated_rro_product.apk
+      - SystemUITitan__auto_generated_rro_product.apk
+      - Traceur__auto_generated_rro_product.apk
+
+  overlay_keys:
+    match:
+      - android:drawable/ic_add_supervised_user
+      - android:string-array/config_defaultPinnerServiceFiles
+      - android:string/config_defaultDockManagerPackageName
+      - android:string/config_dreamsDefaultComponent
+      - android:string/config_defaultAmbientContextConsentComponent
+      - android:string-array/config_disabledDreamComponents
+      - com.android.settings:string-array/config_preinstalled_dream_components
+      - com.android.systemui:string/config_communalSourceComponent
+      - com.android.systemui:string/config_communalSourceConnector
+      - com.android.systemui:string/config_dock_setup_component_v2
+      - com.android.systemui:string/config_dock_setup_service_component
+      - com.android.systemui:string/config_dock_setup_unlocked_component
+      - com.android.systemui:string/config_dock_setup_v2_service_component
+      - com.android.systemui:string/config_lowLightDreamComponent
+      - com.android.systemui:string/config_media_shell_service_component
+      - com.android.systemui:string/config_nest_dock_manager_service_component
