@@ -22,6 +22,9 @@ filters:
       - vendor/etc/vintf/manifest/power.xml
       - vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
       - vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
+      # Required by the CIS modem HAL.
+      - vendor/lib/libdiag.so
+      - vendor/lib64/libdiag.so
 
   files:
     match:
