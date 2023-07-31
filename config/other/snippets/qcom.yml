@@ -58,8 +58,11 @@ filters:
       - vendor/lib64/hw/android.hardware.boot@1.0-impl-1.1-qti.so
 
     prefix:
+      - product/etc/selinux/
       - system/
       - system_ext/etc/bluetooth/
+      - system_ext/etc/selinux/
+      - vendor/etc/selinux/
       - vendor/lib/vndk/
 
   # Resource overlay APK file names (to work around aapt2 parsing bugs)
@@ -81,6 +84,7 @@ filters:
 
   props:
     match:
+      - persist.sys.usb.config
       - ro.bluetooth.library_name
       - ro.bootimage.build.date
       - ro.bootimage.build.date.utc

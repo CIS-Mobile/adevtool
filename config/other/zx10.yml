@@ -48,7 +48,6 @@ filters:
       # We don't want to include anything from /system as this is a mainline platform
       - system/
       - vendor/app/DisplayLinkPresenter/
-      - vendor/etc/selinux/
       - vendor/lib/vndk/
       - vendor/odm
 
