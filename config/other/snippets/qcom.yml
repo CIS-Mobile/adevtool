@@ -3,7 +3,12 @@ filters:
     match:
       - product/app/Calendar/Calendar.apk
       - product/app/DeviceStatisticsService/DeviceStatisticsService.apk
+      - product/etc/permissions/privapp-permissions-soundrecorder.xml
+      - product/priv-app/QtiSoundRecorder/QtiSoundRecorder.apk
+      - product/build.prop
       - system_ext/app/BluetoothDsDaService/BluetoothDsDaService.apk
+      - system_ext/app/QCC/QCC.apk
+      - system_ext/app/QCC-AUTHMGR/QCC-AUTHMGR.apk
       - system_ext/app/QdcmFF/QdcmFF.apk
       - system_ext/app/aptxacu/aptxacu.apk
       - system_ext/app/aptxui/aptxui.apk
@@ -12,7 +17,10 @@ filters:
       - system_ext/bin/aptxalsOverlayCreateProject.sh
       - system_ext/bin/bt_logger
       - system_ext/bin/dun-server
+      - system_ext/bin/qccsyshalservice
       - system_ext/etc/init/init.qti.bt.logger.rc
+      - system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
+      - system_ext/etc/permissions/com.android.cellbroadcastreceiver.xml
       - system_ext/etc/permissions/privapp-permissions-aptxals.xml
       - system_ext/etc/permissions/privapp-permissions-mms.xml
       - system_ext/etc/permissions/qti_supplicant_interface.xml
@@ -28,6 +36,8 @@ filters:
       - system_ext/lib/libsmomoconfig.qti.so
       - system_ext/lib/libsystemhelper_jni.so
       - system_ext/lib/libxrvd.qti.so
+      - system_ext/lib/vendor.qti.hardware.qccsyshal@1.0.so
+      - system_ext/lib/vendor.qti.hardware.qccsyshal@1.0-halimpl.so
       - system_ext/lib64/libadapter.dylib.so
       - system_ext/lib64/libbluetooth_qti.so
       - system_ext/lib64/libbt-logClient.so
@@ -41,6 +51,9 @@ filters:
       - system_ext/lib64/libsmomoconfig.qti.so
       - system_ext/lib64/libsystemhelper_jni.so
       - system_ext/lib64/libxrvd.qti.so
+      - system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+      - system_ext/lib/vendor.qti.hardware.qccsyshal@1.0-halimpl.so
+      - system_ext/priv-app/CellBroadcastAppPlatform/CellBroadcastAppPlatform.apk
       - system_ext/priv-app/MSDC_UI/MSDC_UI.apk
       - system_ext/priv-app/Mms/Mms.apk
       - system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
@@ -48,18 +61,24 @@ filters:
       - system_ext/priv-app/aptxals/aptxals.apk
       - system_ext/priv-app/com.qualcomm.qti.services.systemhelper/lib/arm64/libsystemhelper_jni.so
       - system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk
+      - system_ext/build.prop
       - vendor/bin/hw/android.hardware.biometrics.face@1.0-service.faceauth
       - vendor/bin/hw/android.hardware.boot@1.1-service
       - vendor/default.prop
+      - vendor/etc/init/hw/init.wpa_supplicant.rc
       - vendor/etc/init/android.hardware.biometrics.face@1.0-service.faceauth.rc
       - vendor/etc/init/android.hardware.boot@1.1-service.rc
       - vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml
+      - vendor/etc/vintf/manifest/manifest.xml
       - vendor/lib/hw/android.hardware.boot@1.0-impl-1.1-qti.so
       - vendor/lib64/hw/android.hardware.boot@1.0-impl-1.1-qti.so
 
     prefix:
+      - product/etc/selinux/
       - system/
       - system_ext/etc/bluetooth/
+      - system_ext/etc/selinux/
+      - vendor/etc/selinux/
       - vendor/lib/vndk/
 
   # Resource overlay APK file names (to work around aapt2 parsing bugs)
@@ -81,6 +100,7 @@ filters:
 
   props:
     match:
+      - persist.sys.usb.config
       - ro.bluetooth.library_name
       - ro.bootimage.build.date
       - ro.bootimage.build.date.utc
