@@ -19,6 +19,7 @@ filters:
       - vendor/overlay/
 
       # Kernel modules should be built from source or AOSP prebuilts, not copied from stock.
+      - system_dlkm/
       - vendor/lib/modules
       - vendor_dlkm/
       - odm/lib/modules

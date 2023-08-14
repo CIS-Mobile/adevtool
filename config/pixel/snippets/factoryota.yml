@@ -5,6 +5,7 @@ filters:
       - system_ext/etc/init/init.sota.rc
       - system_ext/etc/permissions/com.google.android.factoryota.xml
       - system_ext/priv-app/FactoryOta/FactoryOta.apk
+      - system_ext/priv-app/FactoryOtaPrebuilt/FactoryOtaPrebuilt.apk
 
   sepolicy_dirs:
     match:

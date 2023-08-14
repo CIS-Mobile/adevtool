@@ -25,5 +25,7 @@ filters:
   dep_files:
     match:
       # Required for building ARM NN HAL
+      - vendor/lib/egl/libGLES_mali.so
       - vendor/lib/libOpenCL.so
+      - vendor/lib64/egl/libGLES_mali.so
       - vendor/lib64/libOpenCL.so

@@ -121,18 +121,24 @@ filters:
       - product/app/MicropaperPrebuilt/MicropaperPrebuilt.apk
       - product/app/NgaResources/NgaResources.apk
       - product/app/PixelThemesStub/PixelThemesStub.apk
+      - product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk
       - product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk
       - product/app/SafetyRegulatoryInfo/SafetyRegulatoryInfo.apk
       - product/app/SoundAmplifierPrebuilt/SoundAmplifierPrebuilt.apk
       - product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk
+      - product/app/WallpaperEmojiPrebuilt/WallpaperEmojiPrebuilt.apk
       - product/etc/permissions/com.google.android.hardwareinfo.xml
       - product/framework/libhwinfo.jar
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
+      - product/priv-app/AmbientStreaming/AmbientStreaming.apk
       - product/priv-app/BetterBug/BetterBug.apk
+      - product/priv-app/BetterBugStub/BetterBugStub.apk
       - product/priv-app/CarrierMetrics/CarrierMetrics.apk
       - product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk
       - product/priv-app/HardwareInfo/HardwareInfo.apk
+      - product/priv-app/HealthConnectPrebuilt/HealthConnectPrebuilt.apk
       - product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk
+      - product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk
       - product/priv-app/MaestroPrebuilt/MaestroPrebuilt.apk
       - product/priv-app/OdadPrebuilt/OdadPrebuilt.apk
       - product/priv-app/OTAConfigNoZeroTouchPrebuilt/OTAConfigNoZeroTouchPrebuilt.apk
@@ -144,6 +150,7 @@ filters:
       - product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk
       - product/priv-app/Showcase/Showcase.apk
       - product/priv-app/TipsPrebuilt/TipsPrebuilt.apk
+      - product/priv-app/WallpaperEffect/WallpaperEffect.apk
       - system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk
       - system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
       - system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk
@@ -164,6 +171,7 @@ filters:
 
       # Diagnostics
       - product/priv-app/DiagnosticsToolPrebuilt/DiagnosticsToolPrebuilt.apk
+      - product/etc/default-permissions/default-permissions_diagnostictool.xml
       - product/etc/permissions/com.google.android.apps.diagnosticstool.xml
 
       # Accessibility gapps
@@ -332,10 +340,12 @@ filters:
 
       # Fonts, feedback, help
       - android:string/config_bodyFont
+      - android:string/config_clockFontFamily
       - android:string/config_feedbackIntent
       - android:string/config_headlineFont
       - android:string/config_helpIntent
       - android:string/config_helpPackage
+      - com.android.permissioncontroller/PermissionControllerStyles:string/config_headlineFontFamily
 
     substring:
       # P17-19: Active Edge
