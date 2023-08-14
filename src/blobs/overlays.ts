@@ -109,7 +109,10 @@ function finishArray(
   let array = parseAaptJson(rawValue) as Array<ResValue>
 
   // Change to typed array?
-  if (typeof array[0] === 'string') {
+  if (typeof array[0] === 'string' && array[0].startsWith('@')) {
+    // It's technically a string, but it's really a reference to another array.
+    type = 'array'
+  } else if (typeof array[0] === 'string') {
     type = 'string-array'
   } else if (typeof array[0] === 'number') {
     // Float arrays are just <array>, so check for integers
@@ -121,14 +124,28 @@ function finishArray(
   values.set(toResKey(targetPkg, targetName, type, key, flags), array)
 }
 
-function parseAaptJson(value: string) {
-  // Fix backslash escapes
-  value = value.replaceAll(/\\/g, '\\\\')
+function parseAaptJson(value: string): any {
+  try {
+    // Fix backslash escapes
+    value = value.replaceAll(/\\/g, '\\\\')
 
-  // Parse hex arrays
-  value = value.replaceAll(/\b0x[0-9a-f]+\b/g, value => `${parseInt(value.slice(2), 16)}`)
+    // Parse hex arrays
+    value = value.replaceAll(/\b0x[0-9a-f]+\b/g, value => `${parseInt(value.slice(2), 16)}`)
 
-  return JSON.parse(value)
+    return JSON.parse(value);
+  } catch (e) {
+    // If JSON parsing fails, extract the substrings starting with "@".
+    const regex = /@[^,\s\]\[]+/g;
+    const result = [];
+    let match;
+
+    while ((match = regex.exec(value)) !== null) {
+      // Remove quotes around the matched values
+      result.push(match[0].replace(/"/g, ''));
+    }
+
+    return result;
+  }
 }
 
 function parseRsrcLines(rsrc: string, targetPkg: string, targetName: string | null) {
@@ -203,6 +220,8 @@ function parseRsrcLines(rsrc: string, targetPkg: string, targetName: string | nu
       } else if (curType == 'string') {
         // Don't rely on quotes for simple strings
         value = rawValue.slice(1, -1)
+      } else if (rawValue.endsWith('%')) {
+        value = rawValue
       } else {
         value = parseAaptJson(rawValue)
       }
@@ -444,8 +463,10 @@ export async function serializePartOverlays(partValues: PartResValues, overlaysD
           },
         } as { [key: string]: any }
 
-        if (type.includes('array')) {
+        if (type.includes('string-array') || type.includes('integer-array')) {
           entry.item = (value as Array<any>).map(v => JSON.stringify(v))
+        } else if (type.includes('array')) {
+          entry.item = (value as Array<any>).map(v => v.toString())
         } else {
           entry._ = value
         }
