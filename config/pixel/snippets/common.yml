@@ -101,9 +101,6 @@ filters:
       - product/priv-app/TurboPrebuilt/TurboPrebuilt.apk
       - product/priv-app/Velvet/Velvet.apk
       - product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk
-      - system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk
-      - system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk
-      - system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
 
     prefix:
       # Another app updated by Play Store on stock
