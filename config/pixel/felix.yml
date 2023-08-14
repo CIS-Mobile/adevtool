@@ -1,0 +1,14 @@
+device:
+  name: felix
+
+platform:
+  product_makefile: device/google/felix/aosp_felix.mk
+
+includes:
+  - snippets/2022.yml
+
+filters:
+  overlay_files:
+    match:
+      # Workaround aapt2 parsing bug, cannot extract required drawables.
+      - HbmSVManager__auto_generated_rro_product.apk
