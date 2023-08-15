@@ -1,0 +1,6 @@
+platform:
+  sepolicy_dirs:
+    - device/google/gs101-sepolicy
+
+includes:
+  - gs-common.yml
