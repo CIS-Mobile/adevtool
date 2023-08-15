@@ -181,6 +181,10 @@ filters:
       - system_ext/priv-app/YadaYada/YadaYada.apk
       - product/priv-app/BetaFeedback/BetaFeedback.apk
 
+      # Face Unlock
+      - product/etc/permissions/android.hardware.biometrics.face.xml
+      - system_ext/priv-app/SettingsGoogleFutureFaceEnroll/SettingsGoogleFutureFaceEnroll.apk
+
     prefix:
       # (Live) wallpapers
       - product/app/WallpapersBReel
@@ -352,6 +356,13 @@ filters:
       - android:string/config_helpIntent
       - android:string/config_helpPackage
       - com.android.permissioncontroller/PermissionControllerStyles:string/config_headlineFontFamily
+
+      # Face Unlock
+      - android:array/config_face_
+      - android:integer-array/config_face_
+      - com.android.settings:integer/config_face_
+      - com.android.settings:string/config_face_
+      - com.android.systemui:integer-array/config_face_
 
     substring:
       # P17-19: Active Edge
