@@ -36,3 +36,8 @@ filters:
     match:
       # Debug
       - ro.adb.secure
+
+      # Sound
+      - ro.config.alarm_alert
+      - ro.config.notification_sound
+      - ro.config.ringtone
