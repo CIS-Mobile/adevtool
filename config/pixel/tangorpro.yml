@@ -1,0 +1,27 @@
+device:
+  name: tangorpro
+
+platform:
+  product_makefile: device/google/tangorpro/aosp_tangorpro.mk
+  sepolicy_dirs:
+    - device/google/tangorpro-sepolicy
+
+includes:
+  - snippets/gs201.yml
+
+filters:
+  overlay_keys:
+    match:
+      - android:string/config_defaultDockManagerPackageName
+      - android:string/config_dreamsDefaultComponent
+      - android:string-array/config_disabledDreamComponents
+      - com.android.settings:string-array/config_preinstalled_dream_components
+      - com.android.systemui:string/config_communalSourceComponent
+      - com.android.systemui:string/config_communalSourceConnector
+      - com.android.systemui:string/config_dock_setup_component_v2
+      - com.android.systemui:string/config_dock_setup_service_component
+      - com.android.systemui:string/config_dock_setup_unlocked_component
+      - com.android.systemui:string/config_dock_setup_v2_service_component
+      - com.android.systemui:string/config_lowLightDreamComponent
+      - com.android.systemui:string/config_media_shell_service_component
+      - com.android.systemui:string/config_nest_dock_manager_service_component
