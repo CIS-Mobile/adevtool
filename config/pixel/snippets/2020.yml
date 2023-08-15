@@ -46,8 +46,3 @@ filters:
       - vendor/etc/vintf/manifest/pixel-display-default.xml
       - vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
       - vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
-
-  overlay_files:
-    match:
-      # Workaround for aapt2 output parsing bug
-      - HbmSVManager__auto_generated_rro_vendor.apk

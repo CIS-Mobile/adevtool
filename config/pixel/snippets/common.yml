@@ -199,6 +199,12 @@ filters:
       - product/tts/google/
       - product/wallpaper/
 
+  overlay_files:
+    match:
+      # Workaround for aapt2 output parsing bug
+      - HbmSVManager__auto_generated_rro_product.apk
+      - HbmSVManager__auto_generated_rro_vendor.apk
+
   overlay_keys:
     match:
       # Safety
