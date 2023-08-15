@@ -122,6 +122,7 @@ filters:
       - product/app/MarkupGoogle/MarkupGoogle.apk
       - product/app/MicropaperPrebuilt/MicropaperPrebuilt.apk
       - product/app/NgaResources/NgaResources.apk
+      - product/app/Ornament/Ornament.apk
       - product/app/PlayBooksPrebuilt/PlayBooksPrebuilt.apk
       - product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk
       - product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk
@@ -216,6 +217,7 @@ filters:
       # (Live) wallpapers
       - product/app/WallpapersBReel
       - product/app/PixelWallpapers
+      - product/app/NexusWallpapers
 
       - product/app/PixelThemesStub
 
