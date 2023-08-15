@@ -38,9 +38,3 @@ filters:
       - com.android.systemui:string/config_lowLightDreamComponent
       - com.android.systemui:string/config_media_shell_service_component
       - com.android.systemui:string/config_nest_dock_manager_service_component
-
-  props:
-    match:
-      - ro.config.alarm_alert
-      - ro.config.notification_sound
-      - ro.config.ringtone
