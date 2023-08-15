@@ -1,0 +1,10 @@
+device:
+  name: lynx
+
+platform:
+  product_makefile: device/google/lynx/aosp_lynx.mk
+  sepolicy_dirs:
+    - device/google/lynx-sepolicy
+
+includes:
+  - snippets/gs201.yml

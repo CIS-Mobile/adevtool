@@ -120,7 +120,6 @@ filters:
       - product/app/MarkupGoogle/MarkupGoogle.apk
       - product/app/MicropaperPrebuilt/MicropaperPrebuilt.apk
       - product/app/NgaResources/NgaResources.apk
-      - product/app/PixelThemesStub/PixelThemesStub.apk
       - product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk
       - product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk
       - product/app/SafetyRegulatoryInfo/SafetyRegulatoryInfo.apk
@@ -129,6 +128,7 @@ filters:
       - product/app/WallpaperEmojiPrebuilt/WallpaperEmojiPrebuilt.apk
       - product/etc/permissions/com.google.android.hardwareinfo.xml
       - product/framework/libhwinfo.jar
+      - product/priv-app/AdaptiveVPNPrebuilt/AdaptiveVPNPrebuilt.apk
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
       - product/priv-app/AmbientStreaming/AmbientStreaming.apk
       - product/priv-app/BetterBug/BetterBug.apk
@@ -143,6 +143,7 @@ filters:
       - product/priv-app/OdadPrebuilt/OdadPrebuilt.apk
       - product/priv-app/OTAConfigNoZeroTouchPrebuilt/OTAConfigNoZeroTouchPrebuilt.apk
       - product/priv-app/PixelLiveWallpaperPrebuilt/PixelLiveWallpaperPrebuilt.apk
+      - product/priv-app/RetailDemoGooglePrebuilt/RetailDemoGooglePrebuilt.apk
       - product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk
       - product/priv-app/SCONE/SCONE.apk
       - product/priv-app/ScribePrebuilt/ScribePrebuilt.apk
@@ -189,6 +190,8 @@ filters:
       # (Live) wallpapers
       - product/app/WallpapersBReel
       - product/app/PixelWallpapers
+
+      - product/app/PixelThemesStub
 
       - product/priv-app/DevicePersonalizationPrebuiltPixel
 
