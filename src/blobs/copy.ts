@@ -25,6 +25,12 @@ export async function copyBlobs(entries: Iterable<BlobEntry>, srcDir: string, de
     // Some files need patching
     if (entry.path.endsWith('.xml')) {
       let xml = await readFile(srcPath)
+      if (xml.startsWith('/*')) {
+        // Fix Qualcomm XMLs that start with C style comments.
+        let patched = xml.replace(/\/\*[\s\S]*?\*\//, '');
+        await fs.writeFile(srcPath, patched);
+        continue
+      }
       // Fix Qualcomm "version 2.0" XMLs
       if (xml.startsWith('<?xml version="2.0"')) {
         let patched = xml.replace(/^<\?xml version="2.0"/, '<?xml version="1.0"')
