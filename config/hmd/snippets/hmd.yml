@@ -1,0 +1,58 @@
+includes:
+  - ../../snippets/mainline_system.yml
+  - ../../snippets/gms.yml
+
+filters:
+  files:
+    match:
+      - odm/logtools/app/OdmGetlogapk/OdmGetlogapk.apk
+      - odm/priv-app/OntimCit/OntimCit.apk
+      - system_ext/app/HMDFMRadio/lib/arm64/libqcomfm_jni.so
+      - system_ext/app/HMDFMRadio/HMDFMRadio.apk
+      - system_ext/priv-app/HMDSettingsProvider/HMDSettingsProvider.apk
+      - system_ext/priv-app/Memorycleaner/Memorycleaner.apk
+
+    prefix:
+      - odm/600
+      - odm/6EU
+      - odm/preload_apps
+      - product/600
+      - product/6EU
+      - product/app/WallpaperPicker_
+      - product/etc/res
+      - system_ext/app/GmsSampleIntegration_
+
+  # Resource overlay APK file names (to work around aapt2 parsing bugs)
+  # Only base file name, not full path.
+  overlay_files:
+    match:
+      - ActivationOverlay.apk
+
+  partitions:
+    match:
+      - abl
+      - bluetooth
+      - core_nhlos
+      - devcfg
+      - dsp
+      - featenabler
+      - hyp
+      - imagefv
+      - keymaster
+      - modem
+      - qupfw
+      - rpm
+      - tz
+      - uefisecapp
+      - xbl_config
+      - xbl
+
+  props:
+    match:
+      - ro.product.nickname
+
+      # Breaks boot on Nokia X30 5G.
+      - ro.lmk.use_psi
+
+      # Debug
+      - ro.lmk.debug

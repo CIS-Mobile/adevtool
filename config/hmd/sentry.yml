@@ -1,0 +1,9 @@
+device:
+  name: sentry
+  vendor: nokia
+
+platform:
+  product_makefile: device/nokia/sentry/altos_sentry.mk
+
+includes:
+  - holi.yml

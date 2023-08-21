@@ -1,0 +1,18 @@
+platform:
+  sepolicy_dirs:
+    - device/qcom/sepolicy_vndr
+    - device/qcom/sepolicy
+
+includes:
+  - snippets/hmd.yml
+  - ../snippets/qcom.yml
+
+filters:
+  dep_files:
+    match:
+      - vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
+      - vendor/etc/vintf/manifest/power.xml
+      - vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
+      - vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
+      - vendor/lib/libdiag.so
+      - vendor/lib64/libdiag.so
