@@ -64,11 +64,14 @@ filters:
       - system_ext/build.prop
       - vendor/bin/hw/android.hardware.biometrics.face@1.0-service.faceauth
       - vendor/bin/hw/android.hardware.boot@1.1-service
+      - vendor/bin/hw/android.hardware.usb@1.2-service-qti
       - vendor/default.prop
       - vendor/etc/init/hw/init.wpa_supplicant.rc
       - vendor/etc/init/android.hardware.biometrics.face@1.0-service.faceauth.rc
       - vendor/etc/init/android.hardware.boot@1.1-service.rc
+      - vendor/etc/init/android.hardware.usb@1.2-service-qti.rc
       - vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml
+      - vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml
       - vendor/etc/vintf/manifest/manifest.xml
       - vendor/lib/hw/android.hardware.boot@1.0-impl-1.1-qti.so
       - vendor/lib64/hw/android.hardware.boot@1.0-impl-1.1-qti.so
