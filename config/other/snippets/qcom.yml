@@ -1,9 +1,13 @@
 filters:
   files:
     match:
+      - product/app/Browser2/Browser2.apk
       - product/app/Calendar/Calendar.apk
       - product/app/DeviceStatisticsService/DeviceStatisticsService.apk
+      - product/app/QuickSearchBox/QuickSearchBox.apk
+      - product/app/webview/webview.apk
       - product/etc/permissions/privapp-permissions-soundrecorder.xml
+      - product/priv-app/OneTimeInitializer/OneTimeInitializer.apk
       - product/priv-app/QtiSoundRecorder/QtiSoundRecorder.apk
       - product/build.prop
       - system_ext/app/BluetoothDsDaService/BluetoothDsDaService.apk
@@ -21,6 +25,7 @@ filters:
       - system_ext/etc/init/init.qti.bt.logger.rc
       - system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc
       - system_ext/etc/permissions/com.android.cellbroadcastreceiver.xml
+      - system_ext/etc/permissions/com.android.provision.xml
       - system_ext/etc/permissions/privapp-permissions-aptxals.xml
       - system_ext/etc/permissions/privapp-permissions-mms.xml
       - system_ext/etc/permissions/qti_supplicant_interface.xml
@@ -56,6 +61,7 @@ filters:
       - system_ext/priv-app/CellBroadcastAppPlatform/CellBroadcastAppPlatform.apk
       - system_ext/priv-app/MSDC_UI/MSDC_UI.apk
       - system_ext/priv-app/Mms/Mms.apk
+      - system_ext/priv-app/Provision/Provision.apk
       - system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
       - system_ext/priv-app/QtiDialer/QtiDialer.apk
       - system_ext/priv-app/aptxals/aptxals.apk
