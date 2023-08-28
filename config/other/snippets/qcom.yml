@@ -93,6 +93,7 @@ filters:
   overlay_keys:
     match:
       - android:string/config_availableColorModes
+      - com.android.phone:string/dialer_default_class
       - com.android.settings:string/config_color_mode_options_strings
       - com.android.settings:string/config_color_mode_options_values
 
