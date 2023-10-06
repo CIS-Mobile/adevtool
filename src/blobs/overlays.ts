@@ -27,6 +27,7 @@ const DIFF_MAP_PACKAGES = new Map([
   ['com.google.android.storagemanager', 'com.android.storagemanager'],
   ['com.google.android.apps.nexuslauncher', 'com.android.launcher3'],
   ['com.google.android.cellbroadcastservice', 'com.android.cellbroadcastservice'],
+  ['com.google.android.uwb.resources', 'com.android.uwb.resources'],
 ])
 
 const XML_BUILDER = new xml2js.Builder()
