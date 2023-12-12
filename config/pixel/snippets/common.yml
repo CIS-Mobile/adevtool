@@ -120,6 +120,7 @@ filters:
       - product/app/HealthConnectHideApps/HealthConnectHideApps.apk
       - product/app/LatinIMEGooglePrebuilt2023Tablet/LatinIMEGooglePrebuilt2023Tablet.apk
       - product/app/MarkupGoogle/MarkupGoogle.apk
+      - product/app/MeetPrebuilt/MeetPrebuilt.apk
       - product/app/MicropaperPrebuilt/MicropaperPrebuilt.apk
       - product/app/NgaResources/NgaResources.apk
       - product/app/Ornament/Ornament.apk
@@ -136,16 +137,19 @@ filters:
       - product/etc/permissions/com.google.android.hardwareinfo.xml
       - product/framework/libhwinfo.jar
       - product/priv-app/AICorePrebuilt/AICorePrebuilt.apk
+      - product/priv-app/AiWallpapers/AiWallpapers.apk
       - product/priv-app/AdaptiveVPNPrebuilt/AdaptiveVPNPrebuilt.apk
       - product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk
       - product/priv-app/AmbientStreaming/AmbientStreaming.apk
       - product/priv-app/BetterBug/BetterBug.apk
       - product/priv-app/BetterBugStub/BetterBugStub.apk
       - product/priv-app/CarrierMetrics/CarrierMetrics.apk
+      - product/priv-app/DeviceConnectivityServicePrebuilt/DeviceConnectivityServicePrebuilt.apk
       - product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk
       - product/priv-app/GoogleHomePrebuilt/GoogleHomePrebuilt.apk
       - product/priv-app/HardwareInfo/HardwareInfo.apk
       - product/priv-app/HealthConnectPrebuilt/HealthConnectPrebuilt.apk
+      - product/priv-app/HealthIntelligenceStubPrebuilt/HealthIntelligenceStubPrebuilt.apk
       - product/priv-app/HelpRtcPrebuilt/HelpRtcPrebuilt.apk
       - product/priv-app/KidsHomePrebuilt/KidsHomePrebuilt.apk
       - product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk

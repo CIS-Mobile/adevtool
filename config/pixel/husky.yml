@@ -1,0 +1,10 @@
+device:
+  name: husky
+
+platform:
+  product_makefile: device/google/shusky/aosp_husky.mk
+  sepolicy_dirs:
+    - device/google/shusky-sepolicy
+
+includes:
+  - snippets/zuma.yml
