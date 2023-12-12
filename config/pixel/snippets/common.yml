@@ -163,7 +163,9 @@ filters:
       - product/priv-app/Showcase/Showcase.apk
       - product/priv-app/TipsPrebuilt/TipsPrebuilt.apk
       - product/priv-app/WallpaperEffect/WallpaperEffect.apk
+      - product/priv-app/WeatherPixelPrebuilt/WeatherPixelPrebuilt.apk
       - system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk
+      - system_ext/app/RepairMode/RepairMode.apk
       - system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
       - system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk
       - system_ext/priv-app/PixelSetupWizard/PixelSetupWizard.apk
@@ -172,6 +174,7 @@ filters:
       - system_ext/priv-app/StorageManagerGoogle/StorageManagerGoogle.apk
       - system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk
       - system_ext/priv-app/SystemUITitan/SystemUITitan.apk
+      - system_ext/priv-app/TelephonyGoogle/TelephonyGoogle.apk
       - system_ext/priv-app/UvExposureReporter/UvExposureReporter.apk
       - system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk
 
