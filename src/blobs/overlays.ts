@@ -29,6 +29,7 @@ const DIFF_MAP_PACKAGES = new Map([
   ['com.google.android.cellbroadcastservice', 'com.android.cellbroadcastservice'],
   ['com.google.android.uwb.resources', 'com.android.uwb.resources'],
   ['com.google.android.devicelockcontroller', 'com.android.devicelockcontroller'],
+  ['com.google.android.healthconnect', 'com.android.healthconnect'],
 ])
 
 const XML_BUILDER = new xml2js.Builder()
