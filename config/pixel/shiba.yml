@@ -1,0 +1,10 @@
+device:
+  name: shiba
+
+platform:
+  product_makefile: device/google/shusky/aosp_shiba.mk
+  sepolicy_dirs:
+    - device/google/shusky-sepolicy
+
+includes:
+  - snippets/zuma.yml

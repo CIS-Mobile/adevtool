@@ -1,6 +1,10 @@
 includes:
   - common.yml
 
+platform:
+  sepolicy_dirs:
+    - device/google/gs-common/wireless_charger/sepolicy
+
 filters:
   partitions:
     match:
@@ -14,6 +18,8 @@ filters:
       - abl
       - bl31
       - tzsw
+      - gcf
+      - gsa_bl1
       - gsa
       - ldfw
       - modem
