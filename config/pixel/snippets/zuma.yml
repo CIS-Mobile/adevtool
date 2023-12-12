@@ -1,0 +1,6 @@
+platform:
+  sepolicy_dirs:
+    - device/google/zuma-sepolicy
+
+includes:
+  - gs-common.yml
