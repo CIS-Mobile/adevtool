@@ -170,6 +170,7 @@ filters:
       - product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk
       - product/priv-app/SCONE/SCONE.apk
       - product/priv-app/ScribePrebuilt/ScribePrebuilt.apk
+      - product/priv-app/SearchSelectorPrebuilt/SearchSelectorPrebuilt.apk
       - product/priv-app/SecurityHubPrebuilt/SecurityHubPrebuilt.apk
       - product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk
       - product/priv-app/Showcase/Showcase.apk
