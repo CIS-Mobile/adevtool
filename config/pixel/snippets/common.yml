@@ -113,6 +113,7 @@ filters:
     prefix:
       - product/app/PixelCameraServices
       - product/priv-app/DevicePersonalizationPrebuiltPixel
+      - product/priv-app/PixelCameraServices
 
   sepolicy_dirs:
     match:
