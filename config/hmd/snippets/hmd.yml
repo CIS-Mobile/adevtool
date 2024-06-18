@@ -13,9 +13,13 @@ filters:
       - system_ext/priv-app/Memorycleaner/Memorycleaner.apk
 
     prefix:
+      - odm/1HMEEA
+      - odm/1HMWW
       - odm/600
       - odm/6EU
       - odm/preload_apps
+      - product/1HMEEA
+      - product/1HMWW
       - product/600
       - product/6EU
       - product/app/WallpaperPicker_

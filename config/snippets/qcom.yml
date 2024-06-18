@@ -53,6 +53,7 @@ filters:
       - system_ext/lib64/libxrvd.qti.so
       - system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so
       - system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+      - system_ext/priv-app/AccessibilityMenu/AccessibilityMenu.apk
       - system_ext/priv-app/CellBroadcastAppPlatform/CellBroadcastAppPlatform.apk
       - system_ext/priv-app/MSDC_UI/MSDC_UI.apk
       - system_ext/priv-app/Mms/Mms.apk
@@ -64,14 +65,24 @@ filters:
       - system_ext/build.prop
       - vendor/bin/hw/android.hardware.biometrics.face@1.0-service.faceauth
       - vendor/bin/hw/android.hardware.boot@1.1-service
+      - vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
+      - vendor/bin/hw/android.hardware.usb@1.2-service-qti
+      - vendor/bin/hw/android.hardware.wifi@1.0-service
       - vendor/default.prop
       - vendor/etc/init/android.hardware.biometrics.face@1.0-service.faceauth.rc
       - vendor/etc/init/android.hardware.boot@1.1-service.rc
+      - vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
+      - vendor/etc/init/android.hardware.usb@1.2-service-qti.rc
+      - vendor/etc/init/android.hardware.wifi@1.0-service.rc
       - vendor/etc/init/hw/init.wpa_supplicant.rc
       - vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml
       - vendor/etc/vintf/manifest/manifest.xml
+      - vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml
+      - vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+      - vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
       - vendor/lib/hw/android.hardware.boot@1.0-impl-1.1-qti.so
       - vendor/lib64/hw/android.hardware.boot@1.0-impl-1.1-qti.so
+      - vendor/rfs/rfs_symlinks
 
     prefix:
       - product/etc/selinux/
@@ -89,7 +100,9 @@ filters:
 
   overlay_keys:
     match:
+      - android:integer-array/config_availableColorModes
       - android:string/config_availableColorModes
+      - com.android.phone:string/dialer_default_class
       - com.android.settings:string-array/config_color_mode_options_strings
       - com.android.settings:integer-array/config_color_mode_options_values
       - com.android.systemui:string-array/config_quickSettingsAutoAdd
